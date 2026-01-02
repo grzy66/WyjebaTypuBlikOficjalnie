@@ -9,41 +9,76 @@
         background: gray;
      }
      #text1{
-        height: 300px;
-       padding-left: 160px !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
      }
-     #wyjeba3{
-        float: right;
-     }
-     #wyjeba2{
-        height: 400px;
-         padding-left: 160px !important;
-     }
-     #cwel{
-         padding-left: 160px !important;
-     }
-     #dopaminka{
-         padding-left: 160px !important;
-          height: 500px;
+     #rejestracja{
+        color: white;
+        font-size: 140%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;  
+        border-radius: 15px;
      }
 
+     input {
+    padding: 8px;
+    width: 200px;
+  }
+     input[type="submit"] {
+    cursor: pointer;
+    width: 100px;
+    margin-top: 10px;
+     }
+      #wyjeba{
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1; 
      
+    }
+    .image-container {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #dopaminka{
+        position: absolute;
+        top: 50%;   
+        right: 20px;
+        transform: translateY(-50%);
+        height: 200px;
+        z-index: 0;
+    }
+    
+
 
     </style>
 </head>
 <body>
+ <img src="text1.gif" alt="Wyjeba typu blik" id="text1">
+
+<form action="https://www.youtube.com/@HejSiemaTuEdi"  method="get" target="_blank" id="rejestracja">
+  <h3>Renciarska rejestracja</h3>
+
+  <input type="text" placeholder="pseudonim renciarski"><br>
+  <input type="text" placeholder="hasło"><br>
+  <input type="submit" value="Wyślij">
+</form>
+<div class="image-container">
+    <img src="wyjeba.jpg" alt="Wyjeba typu blik" id="wyjeba">
+    <img src="dopaminka farmer.gif" alt="dopaminka" id="dopaminka">
+</div>
 
 
 
-    <img src="text1.gif" alt="style" id="text1">
-    <img src="wyjeba.jpg" alt="" id="wyjeba">
-    <img src="wyjeba blik.jpg" id="wyjeba2">
-    <img src="wyjeba2.jpg" id="wyjeba3">
-    <img src="dopaminka farmer.gif" id="dopaminka">
-    <form id="cwel">
-        <input type="text" placeholder="Pseudonim renciarski">\
-        <input type="submit">
-    </form>
+
+   
 
 
     
